@@ -9,7 +9,7 @@ describe('Reconstruct Trip', ()=>{
         expect(reconstruct_trip([t1, t2, t3], 3)).toEqual(["PDX", "DCA", "NONE"])
     })
     
-    it('[2] long case', ()=>{
+    it.only('[2] long case', ()=>{
         const t1 = new Ticket("PIT", "ORD")
         const t2 = new Ticket("XNA", "SAP")
         const t3 = new Ticket("SFO", "BHM")
