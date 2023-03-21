@@ -1,14 +1,9 @@
 const finder = (files, queries) =>{
-    let hash_table = {}
     let result = []
 
-    queries.forEach(q => {
-        hash_table[q] = []
-    })
-
     files.forEach(f => {
-        for(let query in hash_table){
-            if(f.endsWith(query)){
+        for(let q = 0; q < queries.length; q++){
+            if(f.endsWith(queries[q])){
                 result.push(f)
             }
         }
