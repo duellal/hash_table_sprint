@@ -1,5 +1,14 @@
 const finder = (files, queries) =>{
-    //your code here
+    let result = []
+
+    files.forEach(f => {
+        for(let q = 0; q < queries.length; q++){
+            if(f.endsWith(queries[q])){
+                result.push(f)
+            }
+        }
+    })
+
     return result;
 }
 

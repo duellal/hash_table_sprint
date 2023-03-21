@@ -7,6 +7,7 @@ describe('get_indices_of_item_weight', ()=>{
     
     it('[2] ex1_2', ()=>{
         expect(get_indices_of_item_weight([4, 4], 2, 8)).toEqual([1, 0])
+
     })
     
     it('[3] ex1_3', ()=>{
